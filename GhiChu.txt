@@ -1,0 +1,6 @@
+- trong phần D:\DHKTKTCN-HN\HK_VI_2023\ThucTapWeb\xampp\htdocs\banhang\admincp\modules\dashboard.php, có đề cập đến Carbon. 
+    ->D:\DHKTKTCN-HN\HK_VI_2023\ThucTapWeb\xampp\htdocs\banhang\carbon\src\Carbon\Carbon.php
+    Carbon là gì, được sử dung để làm gì
+- D:\DHKTKTCN-HN\HK_VI_2023\ThucTapWeb\xampp\htdocs\banhang\admincp\modules\thongke.php cũng đề cập đến Carbon
+
+- require('../carbon/autoload.php');

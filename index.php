@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="./assets/css/thongtin.css">
         <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css" >
     </head>
-    <body>
+    <body> 
         <div class="wappter">
         <?php
             session_start();

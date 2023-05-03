@@ -95,7 +95,7 @@
             <?php   
                 $sql_trang = mysqli_query($mysqli,"SELECT * FROM tbl_sanpham  "); // lấy tất cả dữ liệu sản phẩm từ tbl sản phẩm điêu kiện có id danh mục  trùng với id danh mục trong tbl sản phẩm
                 $row_count = mysqli_num_rows($sql_trang);
-                $trang = ceil($row_count/8);//chia cho 2 này là lấy ví dụ mỗi trang có 2 sản phẩm
+                $trang = ceil($row_count/8);//chia cho 2 này là lấy ví dụ mỗi trang có 2 sản phẩm;  $trang = ceil($row_count/8);
                 // echo $trang;
             ?>
             <div class="filter-page">

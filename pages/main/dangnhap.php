@@ -13,16 +13,19 @@
 			
 			$_SESSION['email'] = $row_data['email'];
 			if($_SESSION['role_id'] == 4){
-           header ("Location:index.php");
+            header ("Location:index.php");
+            // echo("<script>location.href = '"."../index.php"."/index.php?msg=$msg';</script>");
 			}else{
 				header ("Location:admincp/index.php");
 
 			}
+            
 		}else{
 			echo '<script>alert("Tài khoản hoặc Mật khẩu không đúng,vui lòng nhập lại.");</script>';
 		}
     }
 ?>
+
 
 <form action="" method="POST">
     <div class="login-dkdn">

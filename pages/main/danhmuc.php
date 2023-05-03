@@ -12,7 +12,7 @@
     }else{
         $begin = ($page*2)-2;   // khi số khác thì lấy số trang nhân với 2 và trừ đi 2 sản phẩn trang trước vd đang lấy là mỗi trang 2 sp
     }
-    $sql_pro = "SELECT * FROM tbl_sanpham WHERE tbl_sanpham.id_danhmuc = '$_GET[id]' AND tinhtrang=1 ORDER BY id_sanpham DESC LIMIT $begin,2"; //lấy tất cả sản phẩm dựa vào id 
+    $sql_pro = "SELECT * FROM tbl_sanpham WHERE tbl_sanpham.id_danhmuc = '$_GET[id]' AND tinhtrang=1 ORDER BY id_sanpham DESC LIMIT $begin,8"; //lấy tất cả sản phẩm dựa vào id <sua 2->4></sua>
     $query_pro = mysqli_query($mysqli,$sql_pro);
     //get ten danh muc
     $sql_cate = "SELECT * FROM tbl_danhmuc WHERE tbl_danhmuc.id_danhmuc = '$_GET[id]' LIMIT 1";

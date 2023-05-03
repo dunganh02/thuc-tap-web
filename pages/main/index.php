@@ -29,10 +29,10 @@
                     
                         <div class="content-section">
                             <h2 class="phuonganhheader">New Arrivals</h2>
-                            <a href="index.php?quanly=shopall"  class="section-sub-heading">Xem Thêm</a>
+                            <a href="index.php?quanly=shopall.php"  class="section-sub-heading">Xem Thêm</a>
                             <div class="maincontent">
                                 <?php
-                                    $sql_pro = "SELECT * FROM tbl_sanpham WHERE tinhtrang=1 LIMIT 12 ";
+                                    $sql_pro = "SELECT * FROM tbl_sanpham WHERE tinhtrang=1 LIMIT 20 "; // hiển thị trong trang chủ
                                     $query_pro = mysqli_query($mysqli,$sql_pro);
                                     $giaspkm=0;
                                     while($row_pro = mysqli_fetch_array($query_pro)){
